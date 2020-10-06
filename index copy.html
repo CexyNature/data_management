@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+    <head>
+		<meta charset="utf-8">
+
+		<title>Data management</title>
+
+		<meta name="description" content="The importance of effective and transparent data management">
+		<meta name="author" content="Cesar Herrera">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css" id="theme">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
+	</head>
+
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<!-- Use external markdown resource, separate slides by three newlines; vertical slides by two newlines -->
+                <section data-markdown data-separator="---">
+				  <textarea data-template>
+					## Data Management
+
+					  by [![César Herrera]](https://github.com/CexyNature)
+
+					  [![Twitter](https://img.shields.io/twitter/follow/CexyNature?style=social)](https://twitter.com/cexynature?lang=en)
+					  [![GitHub](https://img.shields.io/github/followers/CexyNature?style=social)](https://github.com/CexyNature)
+
+					---
+					## What is Data?
+
+					  In a more holistic view, and in science data includes the methods and protocols used to collect data, data itself, and the code and procedure use to analyse data.
+					  Today, I will mainly focus in good practices to manage data, but also field and ab methods, protocols, code and workflow analysis.
+					  I will spend a fair amount of time describing the importance of managing data properly.
+
+
+
+					---
+					## Why managing data is important?
+
+
+					---
+					## The life cycle of data
+
+
+					---
+					### Data can be integrate in other people work
+
+
+					---
+					## Best practices for data management
+
+
+
+					---
+					## Conclusions
+
+
+
+				  </textarea>
+				</section>
+
+				<section data-markdown="DM.md"
+						 data-separator="^\n\n\n"
+						 data-separator-vertical="^\n\n"
+						 data-separator-notes="^Note:"
+						 data-charset="iso-8859-15">
+					<!--
+						Note that Windows uses `\r\n` instead of `\n` as its linefeed character.
+						For a regex that supports all operating systems, use `\r?\n` instead of `\n`.
+					-->
+				</section>
+
+
+
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>

@@ -1,0 +1,456 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css" id="theme">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+                <section data-markdown="DM_01.md"
+                         data-separator="^\n\n\n"
+                         data-separator-vertical="^\n\n">
+                </section>
+
+                <section>
+                    <section data-background="dm_assets/tmp.gif">
+                            <h2>Why managing data is important?</h2>
+                    </section>
+                    <section>
+                        <h5>Data is an essential aspect of modern business models.</h5>
+                    </section>
+
+                    <section data-markdown>
+                        <script type="text/template">
+                            #### Science entirely depends on data
+                            (i.e. information, protocols, software, code, etc)
+
+                            - Science vs Academia <!-- .element: class="fragment" data-fragment-index="1" -->
+                            - Academia incentives: papers, funding, patents, etc <!-- .element: class="fragment" data-fragment-index="2" -->
+
+                            *Data management is not in the priority list!* <!-- .element: class="fragment" data-fragment-index="3" -->
+                        </script>
+                     </section>
+
+                    <section data-markdown>
+                        <script type="text/template">
+                            ### Q: How many of you have received training in Data Managament?
+
+                            Yes [0]
+                            No [0]
+                        </script>
+                    </section>
+
+                    <section data-markdown>
+                        <script type="text/template">
+                            ### Q: How many of you have organized DM training for fellow junior colleagues/lab-mates?
+
+                            Yes [0]
+                            No [0]
+                        </script>
+                    </section>
+                </section>
+
+
+                <section>
+                    <section data-background="dm_assets/tmp-1.gif">
+                        <h2>The life cycle of data</h2>
+                    </section>
+					<section>
+                        <h2>Science can be obscure</h2>
+					    <img class="fragment" src="dm_assets/tmp-4.gif" width="450">
+                    </section>
+                    <section data-background-iframe="http://brunalab.org/wp-content/uploads/2014/09/Michener_etal_1997_EcolApplications.pdf" data-background-interactive>
+                        <div style="position: absolute; width: 40%; right: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+                            <h2>An example from Ecology</h2>
+                            <p>As time progress, data entropy increase. This is, data becomes more difficult to find, reuse or make sense of it.</p>
+                        </div>
+                    </section>
+                    <section data-background="dm_assets/data_entropy.png"
+                             data-background-size="500px" data-background-position=20% 75%;>
+                        <div style="position: absolute; width: 40%; right: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(255, 255, 255, 0.9); color: #000000; padding: 20px; font-size: 20px; text-align: left;">
+                            <p>Our mission is to extend the life cycle of data</p>
+                        </div>
+                    </section>
+
+                    <section data-background-iframe="http://www.omsj.org/reports/Horton%202015.pdf" data-background-interactive>
+                        <div style="position: absolute; width: 40%; right: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+                            <h2>“A lot of what is published is incorrect.”</h2>
+                            <p>"... something has gone fundamentally wrong with one of our greatest human creations (Science)" The Lancet, 2015</p>
+                        </div>
+                    </section>
+
+                    <section data-background-iframe="https://www.nature.com/news/1-500-scientists-lift-the-lid-on-reproducibility-1.19970" data-background-interactive>
+                        <div style="position: absolute; width: 40%; right: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+                            <h2>The opinion of 1500 scientists</h2>
+                            <p>"A survey of Nature readers revealed a high level of concern about the problem of irreproducible results. Researchers, funders and journals need to work together to make research more reliable" Nature, 2015</p>
+                        </div>
+                    </section>
+
+                    <section data-markdown="DM_02.md"
+                         data-separator="^\n\n\n"
+                         data-separator-vertical="^\n\n">
+                    </section>
+
+                    <section data-background-iframe="https://sts.wisc.edu/wp-content/uploads/sites/328/2019/06/Raise-standards-for-preclinical-cancer-research-Begley-and-Ellis.pdf"
+                             data-background-interactive>
+                        <div style="position: absolute; width: 40%; right: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+                            <h2>Must try harder</h2>
+                            <p>"Too many sloppy mistakes are creeping into scientific papers. Lab heads must look more rigorously at the data — and at themselves." Nature, 2012</p>
+                        </div>
+                    </section>
+
+                    <section data-background-iframe="https://www.theatlantic.com/science/archive/2016/09/the-inevitable-evolution-of-bad-science/500609/"
+                             data-background-interactive
+                             data-background-color="white">
+                        <div style="position: absolute; width: 40%; right: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+                            <h2>Smaldino and McElreath 2016</h2>
+                            <p>"Punishing individuals for failure to replicate their original results is unlikely to be effective at stopping the evolution of bad science."</p>
+                        </div>
+                    </section>
+
+				</section>
+
+                <section>
+                    <section data-markdown>
+                        <script type="text/template">
+                            ### Data can be integrated in other people's work
+                            (including your own future work)
+                            ![](dm_assets/tmp-3.gif)
+                        </script>
+                    </section>
+                    <section data-markdown>
+                        <script type="text/template">
+                            <h5>Some disciplines have done a fair progress in enabling processes and systems to curate, re-use and share data.</h5>
+                            <p>In general, it seems that adoption of good data management practices is not fully embraced, but there is an increasingly movement to do so.</p>
+                        </script>
+                    </section>
+                    <section data-markdown>
+                        <script type="text/template">
+                            <h5>The lack of scientific and professional set of norms about how to use software and how to manage data.</h5>
+                            <p>For instance, there is not agreement in file systems to be used</p>
+                        </script>
+                    </section>
+                    <section data-markdown>
+                        <script type="text/template">
+                            ## Self-evaluation:
+                            - Is your data ready to use? <!-- .element: class="fragment" data-fragment-index="1" -->
+                            - Would others be able to use your data without friction? <!-- .element: class="fragment" data-fragment-index="2" -->
+                            - Can you use data from your supervisor, student or colleague? <!-- .element: class="fragment" data-fragment-index="3" -->
+                            - How likely is that your data would be available to use in the future (i.e months and years)?  <!-- .element: class="fragment" data-fragment-index="4" -->
+                        </script>
+                    </section>
+                </section>
+
+                <section data-auto-animate data-auto-animate-easing="cubic-bezier(0.770, 0.000, 0.175, 1.000)">
+					<h2>What is Data Management</h2>
+					<p>- How to organize data</p>
+					<div class="r-hstack justify-center">
+						<div data-id="box1" style="background: #3a86ff; width: 50px; height: 50px; margin: 10px; border-radius: 5px;"></div>
+						<div data-id="box2" style="background: #999; width: 50px; height: 50px; margin: 10px; border-radius: 5px;"></div>
+						<div data-id="box3" style="background: #999; width: 50px; height: 50px; margin: 10px; border-radius: 5px;"></div>
+                        <div data-id="box4" style="background: #999; width: 50px; height: 50px; margin: 10px; border-radius: 5px;"></div>
+					</div>
+				</section>
+
+                <section data-auto-animate data-auto-animate-easing="cubic-bezier(0.770, 0.000, 0.175, 1.000)">
+					<h2>What is Data Management</h2>
+					<p>- How to curate data</p>
+					<div class="r-hstack justify-center">
+						<div data-id="box1" style="background: #999; width: 50px; height: 50px; margin: 10px; border-radius: 5px;"></div>
+						<div data-id="box2" style="background: #ef476f; width: 50px; height: 50px; margin: 10px; border-radius: 5px;"></div>
+						<div data-id="box3" style="background: #999; width: 50px; height: 50px; margin: 10px; border-radius: 5px;"></div>
+                        <div data-id="box4" style="background: #999; width: 50px; height: 50px; margin: 10px; border-radius: 5px;"></div>
+					</div>
+				</section>
+
+                <section data-auto-animate data-auto-animate-easing="cubic-bezier(0.770, 0.000, 0.175, 1.000)">
+					<h2>What is Data Management</h2>
+					<p>- How to test data and procedures</p>
+					<div class="r-hstack justify-center">
+						<div data-id="box1" style="background: #999; width: 50px; height: 50px; margin: 10px; border-radius: 5px;"></div>
+						<div data-id="box2" style="background: #999; width: 50px; height: 50px; margin: 10px; border-radius: 5px;"></div>
+						<div data-id="box3" style="background: yellow; width: 50px; height: 50px; margin: 10px; border-radius: 5px;"></div>
+                        <div data-id="box4" style="background: #999; width: 50px; height: 50px; margin: 10px; border-radius: 5px;"></div>
+					</div>
+				</section>
+
+                <section data-auto-animate data-auto-animate-easing="cubic-bezier(0.770, 0.000, 0.175, 1.000)">
+					<h2>What is Data Management</h2>
+					<p>- Manage distributed contributions</p>
+					<div class="r-hstack justify-center">
+						<div data-id="box1" style="background: #999; width: 50px; height: 50px; margin: 10px; border-radius: 5px;"></div>
+						<div data-id="box2" style="background: #999; width: 50px; height: 50px; margin: 10px; border-radius: 5px;"></div>
+						<div data-id="box3" style="background: #999; width: 50px; height: 50px; margin: 10px; border-radius: 5px;"></div>
+                        <div data-id="box4" style="background: #17c3b2; width: 50px; height: 50px; margin: 10px; border-radius: 5px;"></div>
+					</div>
+				</section>
+
+				<section data-auto-animate data-auto-animate-easing="cubic-bezier(0.770, 0.000, 0.175, 1.000)">
+					<div class="r-hstack justify-center">
+						<div data-id="box1" data-auto-animate-delay="0" style="background: #3a86ff; width: 150px; height: 100px; margin: 10px;"></div>
+						<div data-id="box2" data-auto-animate-delay="0.1" style="background: #ef476f; width: 150px; height: 100px; margin: 10px;"></div>
+						<div data-id="box3" data-auto-animate-delay="0.2" style="background: yellow; width: 150px; height: 100px; margin: 10px;"></div>
+                        <div data-id="box4" data-auto-animate-delay="0.3" style="background: #17c3b2; width: 150px; height: 100px; margin: 10px;"></div>
+					</div>
+					<h2 style="margin-top: 20px;">Effective data management</h2>
+				</section>
+				<section data-auto-animate data-auto-animate-easing="cubic-bezier(0.770, 0.000, 0.175, 1.000)">
+					<div class="r-stack">
+						<div data-id="box1" style="background: #3a86ff; width: 300px; height: 300px; border-radius: 200px;"></div>
+						<div data-id="box2" style="background: #ef476f; width: 200px; height: 200px; border-radius: 200px;"></div>
+						<div data-id="box3" style="background: yellow; width: 100px; height: 100px; border-radius: 200px;"></div>
+                        <div data-id="box4" style="background: #17c3b2; width: 50px; height: 50px; border-radius: 200px;"></div>
+					</div>
+					<p style="margin-top: 20px;">Integrity, Intelligibility, and Interoperability</p>
+                </section>
+
+                <section>
+                    <section data-markdown>
+                        <script type="text/template">
+                            ## Best practices for data management
+
+                            Understand your process of data generation
+                        </script>
+                    </section>
+
+                    <section data-markdown>
+                        <script type="text/template">
+                            ### Source of data:
+
+                            - Instrument data
+                            - Observation data (field or lab)
+                        </script>
+                    </section>
+
+
+                    <section data-background-image="dm_assets/field_data.jpg">
+                        <div style="position: absolute; width: 40%; right: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+                            <h2>Field data recorded by myself: Integral part of my research</h2>
+                            <p>Record, copy, digitize, copy, backup, transcribe, backup</p>
+                        </div>
+                    </section>
+                    <section data-background-image="dm_assets/data_loggers.png"
+                             data-background-size="400px" data-background-repeat="repeat">
+                        <div style="position: absolute; width: 20%; right: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+                            <h2>Instrument data</h2>
+                            <p>Ensuring data is preserved in a time-proof format. Including meta-information.</p>
+                        </div>
+                    </section>
+
+                    <section data-markdown>
+                        <script type="text/template">
+                            ### How data would be used:
+
+                            - What is the best format for analysis.
+                            - What kind of storage should be used (cloud, local network, portable drives)
+                            - What is the procedure to include more data
+                        </script>
+                    </section>
+
+                    <section data-markdown>
+                        <script type="text/template">
+                            ### Data future:
+
+                            - Assign ownership <!-- .element: class="fragment" data-fragment-index="1" -->
+                            - Report people, funding bodies and agencies involved in data collection <!-- .element: class="fragment" data-fragment-index="2" -->
+                            - Decide license <!-- .element: class="fragment" data-fragment-index="3" -->
+                            - Decide who, why, and for how long data would be curated <!-- .element: class="fragment" data-fragment-index="4" -->
+                            - Decide who is, what is and where is -the source of truth? <!-- .element: class="fragment" data-fragment-index="5" -->
+                            - Archive data with a reputable and secure organization <!-- .element: class="fragment" data-fragment-index="6" -->
+                        </script>
+                    </section>
+
+
+                    <section data-markdown>
+                        <script type="text/template">
+                            ### Data ~~tasting~~ testing:
+
+                            ![](dm_assets/tmp-7.gif)
+
+                        </script>
+                    </section>
+
+
+                    <!-- Code -->
+                    <section data-markdown>
+                        <script type="text/template">
+                            ```r
+
+                            crabs_occurrence <- read.csv("my_occurrence_crab_data_annandale.csv")
+
+                            test_data <- function(data) {
+                                for (col in columns){
+                                    check1 <- check_column_data_type()
+                                    check2 <- check_column_values(min, max, na.values)
+                                    }
+
+                                check3 <- check_data_dimension()
+
+                                check4 <- another_checks()
+                            }
+                            test_data(crabs_occurrence)
+
+                            ```
+                        </script>
+                    </section>
+
+
+                    <section data-markdown>
+                        <script type="text/template">
+                            ### Use descriptive names:
+
+                            ![](dm_assets/confused-about-fat.jpg)
+
+                        </script>
+                    </section>
+
+
+                    <!-- Code -->
+                    <section data-markdown>
+                        <script type="text/template">
+                            ```r
+
+                            data <- read.csv("mydata_version3_20FEB2020_final_2.csv")
+
+                            td <- function(data) {
+                                for (col in columns){
+                                    check1 <- ccdt()
+                                    check2 <- ccv(min, max, na.values)
+                                    }
+
+                                check3 <- cdd()
+
+                                check4 <- ac()
+
+                            }
+                            td(data)
+                            ```
+                        </script>
+                    </section>
+
+                    <section data-background-iframe="https://cran.r-project.org/web/packages/raster/raster.pdf"
+                             data-background-interactive>
+                        <div style="position: absolute; width: 40%; right: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+                            <h2>If you have obscure names</h2>
+                            <p>You must document well</p>
+                        </div>
+                    </section>
+
+                    <section data-markdown>
+                        <script type="text/template">
+                            ### Document well your analyses and code:
+
+                            ![](dm_assets/tmp-8.gif)
+
+                        </script>
+                    </section>
+
+                    <section data-background-image="dm_assets/document_code.png"
+                             data-background-size="1000px">
+                        <div style="position: absolute; width: 40%; right: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+                            <h2>Include a vignette</h2>
+                            <p>Explain the naming conventaion, the functions and variables you defined. The general purpose of the script</p>
+                        </div>
+                    </section>
+
+                     <section data-background-image="dm_assets/organize_code.png"
+                             data-background-size="1200px">
+                        <div style="position: absolute; width: 40%; right: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+                            <h2>Organize your code</h2>
+                            <p>It would make it easy for you and for others.</p>
+                        </div>
+                    </section>
+
+                    <section data-background-image="dm_assets/explicit_information.png"
+                             data-background-size="800px">
+                        <div style="position: absolute; width: 40%; right: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+                            <h2>Describe the files/directories structure in your project</h2>
+                            <p>It could required some thinking at the beginning, but once you do it once you can keep using it in the future</p>
+                        </div>
+                    </section>
+
+                    <section data-background-image="dm_assets/compartmentalize_your_code.png"
+                             data-background-size="1200px">
+                        <div style="position: absolute; width: 40%; right: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+                            <h2>Short scripts for specific tasks</h2>
+                            <p>Compartmentalize your code</p>
+                        </div>
+                    </section>
+
+                    <section data-background-image="dm_assets/create_functions.png"
+                             data-background-size="600px">
+                        <div style="position: absolute; width: 40%; right: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+                            <h2>Avoid repeating code along scripts</h2>
+                            <p>Instead create functions that you can use on request</p>
+                        </div>
+                    </section>
+
+                    <section data-markdown>
+                        <script type="text/template">
+                            - Create metadata for data, code, procedures
+                            - Effectively track different versions of code
+                            - Think about sensible data and the ethics
+
+                        </script>
+                    </section>
+
+                </section>
+
+
+                <!-- Use external markdown resource, separate slides by three newlines; vertical slides by two newlines -->
+                <section data-markdown="DM_03.md"
+                         data-separator="^\n\n\n"
+                         data-separator-vertical="^\n\n">
+                </section>
+
+
+
+                <!-- Code -->
+                <section data-markdown>
+                    <script type="text/template">
+                        ```php [1|3-5]
+                        public function foo()
+                        {
+                            $foo = array(
+                                'bar' => 'bar'
+                            )
+                        }
+                        ```
+                    </script>
+                </section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+        <script src="reveal.js/js/reveal.js"></script>
+		<script>
+			Reveal.initialize({
+			    hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ],
+                // ...
+
+                dependencies: [
+                    // ...
+
+                    { src: 'node_modules/reveald3/reveald3.js' }
+                ]
+            });
+		</script>
+	</body>
+</html>

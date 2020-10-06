@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css" id="theme">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>Slide 1</section>
+
+                <!-- Include a beautiful website directly in your presentation -->
+                <section>
+                  <h3>Insert website pages</h3>
+                  <div class="row" style="margin-top: 0">
+                      <div class="col-100">
+                        <p>Full website. <br>Note: it's scrollable!</p>
+                        <div class="fig-container" style="height: 400px;"
+                         data-file="https://gcalmettes.github.io/bootstrap-tools/"
+                         data-scrollable="yes">
+                        </div>
+                      </div>
+                  </div>
+                </section>
+
+				<section data-background-iframe="http://brunalab.org/wp-content/uploads/2014/09/Michener_etal_1997_EcolApplications.pdf" data-background-interactive>
+					<div style="position: absolute; width: 40%; right: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+						<h2>An example from Ecology</h2>
+						<p>As time progress, data entropy increase. This is, data becomes more difficult to find, reuse or make sense of it.</p>
+					</div>
+				</section>
+
+
+                <!-- Include a beautiful website directly in your presentation -->
+                <section class="fig-container" data-file="https://gcalmettes.github.io/bootstrap-tools/">
+                    <div style="width: 50%; margin-left: 45% !important; background-color: #777777; font-size: 0.75em; border-radius: 20px;">
+                        <p>Embed websites in the background too</p>
+					</div>
+				</section>
+
+                <!-- same than above but no scrolling -->
+                <section class="fig-container"
+                         data-file="https://gcalmettes.github.io/bootstrap-tools/"
+                         data-style="scrolling:no"
+                         data-scroll="no">
+                    <div style="width: 50%; margin-left: 45% !important; background-color: #6833FF; font-size: 0.75em; border-radius: 20px;">
+                        Scrolling deactivated via the data-scroll="no" option
+					</div>
+                </section>
+
+				<section>Slide 2</section>
+
+
+
+
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+        <script src="reveal.js/js/reveal.js"></script>
+		<script>
+			Reveal.initialize({
+			    hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ],
+                // ...
+
+                dependencies: [
+                    // ...
+
+                    { src: 'node_modules/reveald3/reveald3.js' }
+                ]
+            });
+		</script>
+	</body>
+</html>
